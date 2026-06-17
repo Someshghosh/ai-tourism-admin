@@ -1,0 +1,27 @@
+/* Sidebar collapse: on narrow screens hide the text labels and shrink to icons. */
+
+@media (max-width: 900px) {
+  .admin-sidebar {
+    width: 64px !important;
+    min-width: 64px !important;
+  }
+  .admin-sidebar .sidebar-label {
+    display: none !important;
+  }
+}
+
+/* Simple spinner */
+.spinner {
+  width: 22px;
+  height: 22px;
+  border: 3px solid #e2e8e6;
+  border-top-color: #1a6b4a;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

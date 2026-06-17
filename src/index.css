@@ -1,0 +1,135 @@
+/* Global styles for the admin panel — white bg, green primary, no frills. */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  color: #1a2421;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #1a6b4a;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: 14px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* --- Reusable table styling --- */
+.tbl th {
+  text-align: left;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #6b7b76;
+  padding: 10px 12px;
+  border-bottom: 1px solid #e2e8e6;
+  white-space: nowrap;
+}
+
+.tbl td {
+  padding: 12px;
+  border-bottom: 1px solid #f0f3f2;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.tbl tbody tr:hover {
+  background: #f7f9f8;
+}
+
+/* --- Reusable inputs --- */
+.field {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #e2e8e6;
+  border-radius: 8px;
+  outline: none;
+}
+
+.field:focus {
+  border-color: #1a6b4a;
+}
+
+/* --- Reusable buttons --- */
+.btn {
+  padding: 9px 16px;
+  border-radius: 8px;
+  border: 1px solid #e2e8e6;
+  background: #ffffff;
+  color: #1a2421;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn:hover:not(:disabled) {
+  background: #f7f9f8;
+}
+
+.btn-primary {
+  background: #1a6b4a;
+  border-color: #1a6b4a;
+  color: #ffffff;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #145239;
+}
+
+.btn-danger {
+  background: #c0392b;
+  border-color: #c0392b;
+  color: #ffffff;
+}
+
+.btn-danger:hover:not(:disabled) {
+  background: #a93226;
+}
+
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 13px;
+}
+
+/* --- Card --- */
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8e6;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
